@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: sports-nexus-service
 spec:
+  type: {{ .Values.service.type }}
   selector:
     app: sports-nexus
   ports:
-    - port: 80
-      targetPort: 8080
-  type: ClusterIP
+    - port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}

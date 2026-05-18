@@ -1,4 +1,6 @@
 apiVersion: v2
 name: sports-nexus
-description: Sports Nexus backend service
+description: Sports Nexus Helm Chart
+type: application
 version: 1.0.0
+appVersion: "1.0"

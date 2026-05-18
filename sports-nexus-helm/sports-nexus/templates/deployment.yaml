@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: sports-nexus
 spec:
-  replicas: 2
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: sports-nexus
@@ -13,7 +13,7 @@ spec:
         app: sports-nexus
     spec:
       containers:
-        - name: backend
-          image: YOUR_ECR_IMAGE:latest
+        - name: app
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: 8080
