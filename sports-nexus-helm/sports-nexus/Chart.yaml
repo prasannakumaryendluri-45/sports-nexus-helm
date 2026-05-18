@@ -1,0 +1,4 @@
+apiVersion: v2
+name: sports-nexus
+description: Sports Nexus backend service
+version: 1.0.0
