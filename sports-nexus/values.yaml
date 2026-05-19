@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: 834922934378.dkr.ecr.ap-south-1.amazonaws.com/sports-nexus
-  tag: latest
+  tag: 39
 
 service:
   type: LoadBalancer
